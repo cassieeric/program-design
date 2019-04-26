@@ -17,31 +17,31 @@ int main(void)
 	int j;
 	struct student temp;
 
-	// ¶¯Ì¬µÄ¹¹ÔìÒ»Î¬Êı×é
-	printf("ÇëÊäÈëÑ§ÉúµÄÈËÊı£º\n");
+	// åŠ¨æ€çš„æ„é€ ä¸€ç»´æ•°ç»„
+	printf("è¯·è¾“å…¥å­¦ç”Ÿçš„äººæ•°ï¼š\n");
 	printf("len = ");
 	scanf("%d", &len);
 	parr = (struct student *)malloc(len * sizeof(struct student));
 
 	for(i=0; i<len; i++)
 	{
-		printf("ÇëÊäÈë%d¸öÑ§ÉúµÄĞÅÏ¢£º\n", i+1);
+		printf("è¯·è¾“å…¥%dä¸ªå­¦ç”Ÿçš„ä¿¡æ¯ï¼š\n", i+1);
 		printf("age = ");
 		scanf("%d", &parr[i].age);
 
 		printf("name = ");
-		scanf("%s", parr[i].name); //nameÊÇÊı×éÃû£¬±¾Éí¾ÍÒÑ¾­ÊÇÊı×éÊ×ÔªËØµÄµØÖ·£¬ËùÒÔparr[i].name²»ÄÜ¹»¸Ã³É&parr[i].name£¬
+		scanf("%s", parr[i].name); //nameæ˜¯æ•°ç»„åï¼Œæœ¬èº«å°±å·²ç»æ˜¯æ•°ç»„é¦–å…ƒç´ çš„åœ°å€ï¼Œæ‰€ä»¥parr[i].nameä¸èƒ½å¤Ÿè¯¥æˆ&parr[i].nameï¼Œ
 
 		printf("score = ");
 		scanf("%f", &parr[i].score);
 	}
 
-	//°´ÕÕÑ§Éú³É¼¨ÉıĞòÅÅĞò Ã°ÅİËã·¨
+	//æŒ‰ç…§å­¦ç”Ÿæˆç»©å‡åºæ’åº å†’æ³¡ç®—æ³•
 	for(i=0; i<len-1; i++)
 	{
 		for(j=0; j<len-1-i; j++)
 		{
-			if(parr[j].score > parr[j+1].score) //>ÊÇÉıĞò£¬<ÊÇÅÅĞò
+			if(parr[j].score > parr[j+1].score) //>æ˜¯å‡åºï¼Œ<æ˜¯æ’åº
 			{
 				temp = parr[j];
 				parr[j] = parr[j+1];
@@ -50,18 +50,17 @@ int main(void)
 		}
 	}
 
-	printf("\n\nÑ§ÉúµÄĞÅÏ¢ÊÇ£º\n");
-	//Êä³ö
+	printf("\n\nå­¦ç”Ÿçš„ä¿¡æ¯æ˜¯ï¼š\n");
+	//è¾“å‡º
 	for(i=0; i<len; i++)
 	{
-		printf("µÚ%d¸öÑ§ÉúµÄĞÅÏ¢£º\n", i+1);
+		printf("ç¬¬%dä¸ªå­¦ç”Ÿçš„ä¿¡æ¯ï¼š\n", i+1);
 		printf("age = %d\n", parr[i].age);
 		printf("name = %s\n", parr[i].name);
 		printf("score = %f\n", parr[i].score);
 
 		printf("\n");
 	}
-
 
 	system("pause");
 	return 0;
