@@ -1,0 +1,10 @@
+I:\git\贺培超\贺培超\bin\Debug\贺培超.exe
+I:\git\贺培超\贺培超\bin\Debug\贺培超.pdb
+I:\git\贺培超\贺培超\obj\Debug\贺培超.csprojResolveAssemblyReference.cache
+I:\git\贺培超\贺培超\obj\Debug\贺培超.Properties.Resources.resources
+I:\git\贺培超\贺培超\obj\Debug\贺培超.csproj.GenerateResource.Cache
+I:\git\贺培超\贺培超\obj\Debug\贺培超.exe
+I:\git\贺培超\贺培超\obj\Debug\贺培超.pdb
+I:\git\贺培超\贺培超\obj\Debug\贺培超.Form1.resources
+I:\git\贺培超\贺培超\obj\Debug\贺培超.mail_setting.resources
+I:\git\贺培超\贺培超\bin\Debug\OpenPop.dll
