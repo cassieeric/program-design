@@ -483,7 +483,6 @@ namespace 贺培超
             }
             // 如果服务器接收请求
             // 向服务器发送凭证——用户名和密码
-
             // 向服务器发送用户名，请求确认
             lsttbxStatus.Items.Add("核实用户名阶段...");
             SendToServer("USER " + tbxUserMail.Text);
