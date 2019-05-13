@@ -270,6 +270,7 @@ namespace 贺培超
             tb_smtpPort.Enabled = true;
             tb_popPort.Enabled = true;
         }
+        
         #region 邮件操作
         // 阅读邮件内容
         // 这里也可以实现ListView Click事件来阅读邮件的
